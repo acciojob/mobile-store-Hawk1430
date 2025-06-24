@@ -9,7 +9,7 @@ const ProductList = () => {
     <div>
       <h2>Mobile Store</h2>
       {products.map(product => (
-        <div key={product.id}>
+        <div key={product.id} style={{'border': '2px solid black', 'marginBottom': '10px', 'padding': '10px', 'textAlign': 'center'}}>
           <img src={product.image} width="100" alt={product.name} />
           <h4>{product.name}</h4>
           <p>{product.price}</p>
