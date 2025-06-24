@@ -52,7 +52,7 @@ const AdminPanel = () => {
               <p>{product.description}</p>
               <p>{product.price}</p>
               <button onClick={() => handleEditClick(product)}>Edit</button>
-              <button className="float-right" onClick={() => deleteProduct(product.id)}>Delete</button>
+              <button className="float-right" data-cy={`delete-btn-${product.id}`} onClick={() => deleteProduct(product.id)}>Delete</button>
             </div>
           )}
         </div>
